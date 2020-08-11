@@ -18,6 +18,8 @@ Also see [a number of importable examples in my repository](https://github.com/R
 This Node-RED Node is based on the <a href="https://github.com/robertklep/nefit-easy-commands">Nefit Easy™ commands library build by Robert Klep</a>.
 At this link also all usable commands are documented and not repeated here for maintainability.
 
+*Minimum supported Node version is now at 10.x.*
+
 ## Features
 
 * Get Status (all information that is visible in the App, including current Temp.)
