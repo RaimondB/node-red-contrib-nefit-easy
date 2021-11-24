@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/node-red-contrib-nefit-easy2)](https://www.npmjs.com/package/node-red-contrib-nefit-easy2)
 [![NPM Download](https://img.shields.io/npm/dm/node-red-contrib-nefit-easy2)](https://npmjs.org/package/node-red-contrib-nefit-easy2)
-[![Build Status](https://travis-ci.com/RaimondB/node-red-contrib-nefit-easy.svg?branch=master)](https://travis-ci.com/RaimondB/node-red-contrib-nefit-easy)
+[![Build Status](https://dev.azure.com/raimondb74/Nodered-Nefit-Easy2/_apis/build/status/RaimondB.node-red-contrib-nefit-easy?branchName=master)](https://dev.azure.com/raimondb74/Nodered-Nefit-Easy2/_build/latest?definitionId=2&branchName=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/RaimondB/node-red-contrib-nefit-easy/badge.svg?targetFile=package.json)](https://snyk.io/test/github/RaimondB/node-red-contrib-nefit-easy?targetFile=package.json)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
