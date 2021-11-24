@@ -6,7 +6,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/RaimondB/node-red-contrib-nefit-easy/badge.svg?targetFile=package.json)](https://snyk.io/test/github/RaimondB/node-red-contrib-nefit-easy?targetFile=package.json)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-A simple setup to get the current temperature is shown below:
+A simple setup to get the current temperature is shown below :
 ![alt text](images/nefit-easy-flow.PNG "Example flow")
 
 Also see [a number of importable examples in my repository](https://github.com/RaimondB/node-red-contrib-nefit-easy/tree/master/examples)).
