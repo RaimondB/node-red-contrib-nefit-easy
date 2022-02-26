@@ -128,6 +128,18 @@ module.exports = function (RED) {
                     promise = client.gasUsagePage();
                     break;
 
+                case 'get-hotwatersupply':
+                    this.logInfo('Nefit command: ' + command);
+                    promise = client.hotWaterSupply();
+                    break;
+
+                case 'set-hotwatersupply':
+                    value = value.toLowerCase();
+                    this.logInfo('Nefit command: ' + command + ' (value: ' + value + ')');
+                    promise = client.setHotWaterSupply(value);
+                    break;
+    
+
                 default:
                     return;
             }
