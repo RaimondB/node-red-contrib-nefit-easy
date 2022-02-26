@@ -34,6 +34,8 @@ At this link also all usable commands are documented and not repeated here for m
 * Get User Mode (manual or clock operation mode
 * Set User Mode
 * Get Gas Usage Data per day
+* Get Hot Water Supply (on or off)
+* Set Hot Water Supply (on or off)
 
 ## Installation
 

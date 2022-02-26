@@ -22,11 +22,13 @@
     "easy"
   ],
   "node-red": {
+    "version": ">=2.0.0",
     "nodes": {
       "nefit-easy": "nefit-easy.js",
       "nefit-easy-config": "nefit-easy-config.js"
     }
   },
+
   "devDependencies": {
     "deep-extend": "^0.6.0",
     "mocha": "^9.2.1",
