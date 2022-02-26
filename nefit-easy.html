@@ -40,6 +40,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             <option value="set-usermode">Set User Mode</option>
             <option value="getval-gasusage">Get Gas Usage</option>
             <option value="gasusagepage">Get Max Gas Usage PageNr</option>
+            <option value="get-hotwatersupply">Get Hot Water Supply</option>
+            <option value="set-hotwatersupply">Set Hot Water Supply</option>
         </select>
     </div>
     <div class="form-row">
@@ -191,6 +193,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
      <p><i>Output:</i>
      <pre><code>Number (latest page of 32 entries)</code></pre>
      </p>
+     <li><b>Get Hot Water Supply</b></li>
+     <p><i>Output:</i> 
+     <pre><code>{ value : "on" | "off" }</code></pre>
+     </p>
+     <li><b>Set Hot Water Supply</b></li>
+     <p><i>Input:</i></p>
+     <pre><code>"on", "off"</code></pre>
+     <p><i>Output:</i> 
+     <pre><code>{ status : 'ok' }</code></pre>
+     </p>
+     <li>
 
  </ul>
  </script>
