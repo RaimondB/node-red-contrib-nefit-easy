@@ -22,10 +22,14 @@
     "easy"
   ],
   "node-red": {
+    "version": ">=2.0.0",
     "nodes": {
       "nefit-easy": "nefit-easy.js",
       "nefit-easy-config": "nefit-easy-config.js"
     }
+  },
+  "engines": {
+    "node": ">=12.0.0"
   },
   "devDependencies": {
     "deep-extend": "^0.6.0",
