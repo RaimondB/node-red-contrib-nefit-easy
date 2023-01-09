@@ -40,7 +40,7 @@
     "@semantic-release/exec": "^6.0.3",
     "should": "^13.2.3",
     "bufferutil": "^4.0.6",
-    "utf-8-validate": "^5.0.8",
+    "utf-8-validate": "^6.0.0",
     "mocha-junit-reporter": "^2.0.2"
   },
   "scripts": {
