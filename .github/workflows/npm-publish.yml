@@ -5,30 +5,13 @@ name: NPM-Publish
 
 on:
   push:
+    branches:
+      - 'main'
 
 jobs:
-  build:
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x, 20.x]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm test -- --reporter json > test-results.json
-      - name: Archive test results
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results-report
-          path: test-results.json
-
   publish-npm:
-    if: ${{github.GITHUB_REF == 'refs/heads/master'}}
-    needs: build
+#    if: ${{github.GITHUB_REF == 'refs/heads/master'}}
+#    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -39,8 +22,9 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm test
       - run: npx semantic-release
         env:
 #          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          GH_TOKEN: ${{secrets.gh_token}}
+          GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           NPM_TOKEN: ${{secrets.npm_token}}
