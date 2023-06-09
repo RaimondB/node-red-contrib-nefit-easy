@@ -6,7 +6,7 @@ name: NPM-Publish
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 
 jobs:
   publish-npm:
