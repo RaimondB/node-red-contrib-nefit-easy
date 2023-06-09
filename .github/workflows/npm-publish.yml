@@ -15,7 +15,7 @@ jobs:
         with:
 # See below for current versions supported by Node-red
 # https://nodered.org/docs/faq/node-versions#installing-nodejs
-          node-version: 16
+          node-version: 18
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm test
