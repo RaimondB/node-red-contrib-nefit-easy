@@ -6,6 +6,3 @@
     "@semantic-release/github"
   ]
 }
-    // ["@semantic-release/exec", {
-    //   "publishCmd": "docker run --rm raimondb/node-red-refresher node-red-contrib-nefit-easy2"
-    // }]
