@@ -1,6 +1,7 @@
 name: NPM-Publish
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'master'
@@ -23,5 +24,5 @@ jobs:
       - run: npx semantic-release
         env:
 #          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-          GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
