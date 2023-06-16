@@ -2,14 +2,14 @@
 
 [![NPM Version](https://img.shields.io/npm/v/node-red-contrib-nefit-easy2)](https://www.npmjs.com/package/node-red-contrib-nefit-easy2)
 [![NPM Download](https://img.shields.io/npm/dm/node-red-contrib-nefit-easy2)](https://npmjs.org/package/node-red-contrib-nefit-easy2)
-[![Build Status](https://dev.azure.com/raimondb74/Nodered-Nefit-Easy2/_apis/build/status/RaimondB.node-red-contrib-nefit-easy?branchName=master)](https://dev.azure.com/raimondb74/Nodered-Nefit-Easy2/_build/latest?definitionId=2&branchName=master)
+[![Build Status](https://github.com/RaimondB/node-red-contrib-nefit-easy/actions/workflows/npm-ci.yml/badge.svg)](https://github.com/RaimondB/node-red-contrib-nefit-easy/actions/workflows/npm-ci.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/RaimondB/node-red-contrib-nefit-easy/badge.svg?targetFile=package.json)](https://snyk.io/test/github/RaimondB/node-red-contrib-nefit-easy?targetFile=package.json)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 A simple setup to get the current temperature is shown below :
 ![alt text](images/nefit-easy-flow.PNG "Example flow")
 
-Also see [a number of importable examples in my repository](https://github.com/RaimondB/node-red-contrib-nefit-easy/tree/master/examples)).
+Also see [a number of importable examples in my repository](https://github.com/RaimondB/node-red-contrib-nefit-easy/tree/master/examples).
 
 ---
 *Pro-Tip* : Be sure to use an external trigger (such as the inject node) to get the latest status. This way you can determine the update speed yourself. However, keep in mind that updating quicker than every 60 seconds will probably result into errors because of limitations of the Nefit API.
@@ -19,19 +19,19 @@ Also see [a number of importable examples in my repository](https://github.com/R
 This Node-RED Node is based on the [Nefit Easy™ commands library build by Robert Klep](https://github.com/robertklep/nefit-easy-commands).
 At this link also all usable commands are documented and not repeated here for maintainability.
 
-*Minimum supported Node version is now at 10.x.*
+*Minimum supported Node version is now at 14.x.*
 
 ## Features
 
 * Get Status (all information that is visible in the App, including current Temp.)
 * Get Pressure
 * Get Location (as set up in App)
-* Get Program data (active program, progam1 and program2
+* Get Program data (active program, progam1 and program2)
 * Get Display boiler statuscode
 * Get Actual Supply temperature
 * Set temperature
 * Set Fireplace Mode (enable or disable)
-* Get User Mode (manual or clock operation mode
+* Get User Mode (manual or clock operation mode)
 * Set User Mode
 * Get Gas Usage Data per day
 * Get Hot Water Supply (on or off)
