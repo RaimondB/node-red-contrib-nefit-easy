@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: npm test -- --reporter json > test-results.json
+      - run: npm test -- --reporter json --reporter-option test-results.json
       - name: Archive test results
         uses: actions/upload-artifact@v3
         if: success() || failure()
