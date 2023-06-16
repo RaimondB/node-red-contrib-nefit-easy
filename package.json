@@ -36,7 +36,7 @@
     "mocha": "^10.0.0",
     "node-red": "^3.0.0",
     "node-red-node-test-helper": "^0.3.0",
-    "semantic-release": "^21.0.0",
+    "semantic-release": "^21.0.5",
     "@semantic-release/exec": "^6.0.3",
     "should": "^13.2.3",
     "bufferutil": "^4.0.6",
