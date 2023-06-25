@@ -44,6 +44,7 @@
     "mocha-junit-reporter": "^2.0.2"
   },
   "scripts": {
-    "test": "mocha \"test/**/*_spec.js\""
+    "test": "mocha \"test/**/*_spec.js\"",
+    "test-ci": "mocha \"test/**/*_spec.js\" --reporter json --reporter-option output=test-results.json"
   }
 }
