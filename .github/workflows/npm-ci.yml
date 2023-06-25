@@ -5,7 +5,9 @@ name: NPM-CI
 
 on:
   push:
-
+    branches-ignore:
+      - master
+      
 jobs:
   build:
     strategy:
