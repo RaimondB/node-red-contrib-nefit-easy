@@ -34,7 +34,7 @@
   "devDependencies": {
     "deep-extend": "^0.6.0",
     "mocha": "^11.6.0",
-    "node-red": "^3.0.0",
+    "node-red": "^4.0.9",
     "node-red-node-test-helper": "^0.3.0",
     "semantic-release": "^23.0.0",
     "@semantic-release/exec": "^6.0.3",
