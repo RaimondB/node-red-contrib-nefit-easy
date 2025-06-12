@@ -14,6 +14,6 @@ jobs:
     - uses: dorny/test-reporter@v1
       with:
         artifact: test-results-report-${{ matrix.node-version }}      # artifact name
-        name: Mocha Tests                  # Name of the check run which will be created
+        name: Mocha Tests-${{ matrix.node-version }}                  # Name of the check run which will be created
         path: '*.json'                     # Path to test results (inside artifact .zip)
         reporter: mocha-json              # Format of test results
