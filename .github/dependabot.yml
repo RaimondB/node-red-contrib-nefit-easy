@@ -12,6 +12,22 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
   - raimondb
+  # These are transitive deps Dependabot cannot patch in this repo, so
+  # its security-update jobs fail on every run. The request-chain ones
+  # (form-data/qs/tough-cookie/ip-address) are locked by
+  # nefit-easy-commands -> request (deprecated, no newer release); the
+  # rest are bundled deep inside dev tooling (node-red/mocha/
+  # semantic-release). Real fix is upstream; ignore to stop the noise.
+  ignore:
+  - dependency-name: "form-data"
+  - dependency-name: "qs"
+  - dependency-name: "tough-cookie"
+  - dependency-name: "ip-address"
+  - dependency-name: "request"
+  - dependency-name: "glob"
+  - dependency-name: "js-yaml"
+  - dependency-name: "picomatch"
+  - dependency-name: "serialize-javascript"
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
