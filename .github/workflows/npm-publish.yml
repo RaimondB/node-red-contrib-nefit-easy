@@ -11,8 +11,10 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # semantic-release: create releases and push tags
-      id-token: write   # npm trusted publisher: OIDC token for npm auth
+      contents: write        # semantic-release: create releases and push tags
+      id-token: write        # npm trusted publisher: OIDC token for npm auth
+      issues: write          # @semantic-release/github: comment on resolved issues
+      pull-requests: write   # @semantic-release/github: comment on released PRs
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
