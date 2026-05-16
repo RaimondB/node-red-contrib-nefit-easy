@@ -19,7 +19,6 @@ jobs:
         with:
           # https://nodered.org/docs/faq/node-versions#installing-nodejs
           node-version: 22
-          registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm test
       - run: npx semantic-release
