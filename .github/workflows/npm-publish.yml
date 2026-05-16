@@ -19,6 +19,9 @@ jobs:
         with:
           # https://nodered.org/docs/faq/node-versions#installing-nodejs
           node-version: 22
+      # Node 22 bundles npm 10.x; native OIDC trusted-publisher
+      # support requires npm >= 11.5.1
+      - run: npm install -g npm@latest
       - run: npm ci
       - run: npm test
       - run: npx semantic-release
