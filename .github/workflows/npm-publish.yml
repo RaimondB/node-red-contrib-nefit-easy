@@ -17,11 +17,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          # https://nodered.org/docs/faq/node-versions#installing-nodejs
-          node-version: 22
-      # Node 22 bundles npm 10.x; native OIDC trusted-publisher
-      # support requires npm >= 11.5.1
-      - run: npm install -g npm@latest
+          # Node 24 bundles npm 11.x, required for native OIDC
+          # trusted-publisher support (npm >= 11.5.1)
+          node-version: 24
       - run: npm ci
       - run: npm test
       - run: npx semantic-release
